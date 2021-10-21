@@ -1,0 +1,18 @@
+
+Makefile equivalent pour Windows (alias Windaub pour certain...)
+
+COMPILER PROJET
+javac -classpath ./classes -sourcepath ./src -d ./classes ./src/fr/insarouen/asi/prog/asiaventure/ClassMain.java
+
+javac -classpath ./classes -sourcepath ./src -d ./classes ./src/fr/insarouen/asi/prog/asiaventure/Main.java
+
+EXECUTER PROJET
+java -classpath classes fr.insarouen.asi.prog.asiaventure.ClassMain
+
+java -classpath classes fr.insarouen.asi.prog.asiaventure.Main
+
+COMPILER TESTS
+javac -classpath ".\classestest;.\classes;.\lib\junit4.jar;.\lib\hamcrest-2.2.jar" -sourcepath .\srctest\ -d .\classestest\ .\srctest\fr\insarouen\asi\prog\asiaventure\AllTests.java
+
+EXECUTER TESTS
+java -classpath "classes;classesTest;lib/junit4.jar;.\lib\hamcrest-2.2.jar" org.junit.runner.JUnitCore fr.insarouen.asi.prog.asiaventure.AllTests
